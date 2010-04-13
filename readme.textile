@@ -6,26 +6,50 @@ A: it depends!
 
 h2. requirements
 
-this project requires "buildr":http://buildr.apache.org/
+This project requires MRI and "JRuby":http://jruby.org, so you should be "using rvm":http://blog.nofail.de/2010/01/xruby-on-the-mac/.
+
+"buildr":http://buildr.apache.org/ is used as a build tool:
 
 <pre>
 rvm use jruby
 gem install buildr
 </pre>
 
-it is tested on OS X Snow Leopard only
+"rjb":http://rjb.rubyforge.org/ is required as a gem for MRI (no JRuby support):
+
+<pre>
+rvm use 1.8.7
+export JAVA_HOME=/Library/Java/Home
+gem install rjb
+</pre>
+
+Tested on OS X Snow Leopard only!
+
+h2. calling examples
+
+You will have to execute the examples differently:
+
+<pre>
+rvm use jruby
+ruby lib/jruby.rb
+
+rvm use 1.8.7
+ruby lib/rjb.rb
+</pre>
 
 h2. buildr
 
-buildr can run the tests for you:
+The Java stuff can be executed with buildr:
 
 <pre>
+rvm use jruby
 buildr clean test
 </pre>
 
-you can use buildr to integrate into eclipse:
+Buildr provides an eclipse integration:
 
 <pre>
+rvm use jruby
 buildr eclipse
 artifacts:sources
 </pre>
