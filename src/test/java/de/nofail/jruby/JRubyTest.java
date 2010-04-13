@@ -7,7 +7,6 @@ import org.apache.bsf.BSFException;
 import org.apache.bsf.BSFManager;
 import org.junit.Test;
 
-
 public class JRubyTest {
 
 	@Test
