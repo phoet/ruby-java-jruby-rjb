@@ -1,0 +1,15 @@
+h1. blablupp
+
+h2. requirements
+
+<pre>
+rvm use jruby
+gem install buildr
+</pre>
+
+h2. buildr
+
+<pre>
+buildr eclipse
+artifacts:sources
+</pre>
