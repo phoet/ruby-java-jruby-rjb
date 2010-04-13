@@ -1,12 +1,12 @@
 h1. ruby in java, java in ruby, jruby or ruby java bridge
 
-Q: what are you supposed to use in your ruby|jruby|java application?
+Q: What are you supposed to use in your ruby/jruby/java application?
 
-A: it depends!
+A: It depends!
 
 h2. requirements
 
-This project requires MRI and "JRuby":http://jruby.org, so you should be "using rvm":http://blog.nofail.de/2010/01/xruby-on-the-mac/.
+This project requires MRI and "JRuby":http://jruby.org, so you should be "using RVM":http://blog.nofail.de/2010/01/xruby-on-the-mac/.
 
 "buildr":http://buildr.apache.org/ is used as a build tool:
 
