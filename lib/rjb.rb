@@ -1,4 +1,4 @@
 require 'rjb'
 
-# import the class via rjb and access it normally
+puts "access java.util.UUID via RJB"
 puts Rjb::import('java.util.UUID').randomUUID().toString()
