@@ -39,7 +39,7 @@ ruby lib/rjb.rb
 
 h2. buildr
 
-The Java stuff can be executed with buildr:
+The "Java tests":http://github.com/phoet/ruby-java-jruby-rjb/blob/master/src/test/java/de/nofail/jruby/JRubyTest.java can be executed with buildr:
 
 <pre>
 rvm use jruby
@@ -50,6 +50,8 @@ Buildr provides an eclipse integration:
 
 <pre>
 rvm use jruby
+# update .project get dependencies and create .classpath
 buildr eclipse
+# download artifact sources
 artifacts:sources
 </pre>
