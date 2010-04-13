@@ -6,7 +6,8 @@ A: it depends!
 
 h2. requirements
 
-this project requires "buildr":http://buildr.apache.org/:
+this project requires "buildr":http://buildr.apache.org/
+
 <pre>
 rvm use jruby
 gem install buildr
@@ -17,11 +18,13 @@ it is tested on OS X Snow Leopard only
 h2. buildr
 
 buildr can run the tests for you:
+
 <pre>
 buildr clean test
 </pre>
 
 you can use buildr to integrate into eclipse:
+
 <pre>
 buildr eclipse
 artifacts:sources
