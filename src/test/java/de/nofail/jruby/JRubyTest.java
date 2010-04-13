@@ -11,7 +11,7 @@ import org.junit.Test;
 public class JRubyTest {
 
 	@Test
-	public void isValid_invalidOrderToken_ExceptionThrown() throws MalformedURLException, BSFException {
+	public void execute_jruby_with_bsf() throws MalformedURLException, BSFException {
 		// http://www.javaworld.com/javaworld/jw-07-2006/jw-0717-ruby.html
 		// JRuby must be registered in BSF.
 		// jruby.jar and bsf.jar must be on classpath.
