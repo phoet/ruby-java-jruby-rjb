@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:lang="http://www.springframework.org/schema/lang"
-       xsi:schemaLocation="
+<beans 
+	xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
-http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.0.xsd">
+http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.0.xsd
+">
 
 <!-- http://static.springsource.org/spring/docs/3.0.2.RELEASE/spring-framework-reference/html/dynamic-language.html -->
 <lang:jruby id="generator" script-interfaces="de.nofail.UUIDGenerator" script-source="classpath:/ruby/uuid_generator.rb">
+	<!-- http://static.springsource.org/spring/docs/3.0.2.RELEASE/spring-framework-reference/html/expressions.html -->
     <lang:property name="uuid" value="#{ T(java.util.UUID).randomUUID().toString() }" />
 </lang:jruby>
 

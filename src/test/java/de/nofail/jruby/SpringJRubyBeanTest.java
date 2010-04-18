@@ -9,6 +9,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import de.nofail.UUIDGenerator;
 
+/**
+ * Wiring JRuby via Spring.
+ * 
+ * @author nofail
+ */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "/applicationContext.xml")
 public class SpringJRubyBeanTest {
@@ -18,6 +23,6 @@ public class SpringJRubyBeanTest {
 
 	@Test
 	public void generateUuid_success() {
-		System.out.println("uuid: " + generator);
+		System.out.println("uuid: " + generator.getUuid());
 	}
 }

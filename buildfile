@@ -14,8 +14,6 @@ SPRING = group(
   "cglib:cglib-nodep:jar:2.2" <<
   "aopalliance:aopalliance:jar:1.0"
 
-#Buildr.settings.build['junit'] = 4.4
-
 define "ruby-java-jruby-rjb", :version=>"0.0.1" do
   test.with JRUBY, SPRING
 end

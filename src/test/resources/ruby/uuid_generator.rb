@@ -1,4 +1,5 @@
 class UuidGenerator
+  attr_accessor :uuid
   def getUuid()
       @uuid
   end
@@ -10,4 +11,5 @@ class UuidGenerator
   end
 end
 
+# don't forget to return an instance as a bean
 UuidGenerator.new
