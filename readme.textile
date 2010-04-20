@@ -39,7 +39,7 @@ ruby lib/rjb.rb
 
 h2. buildr
 
-The "Java tests":http://github.com/phoet/ruby-java-jruby-rjb/blob/master/src/test/java/de/nofail/jruby/JRubyTest.java can be executed with buildr:
+The "Java tests":http://github.com/phoet/ruby-java-jruby-rjb/blob/master/src/test/java/de/nofail/jruby/ can be executed with buildr:
 
 <pre>
 rvm use jruby
@@ -55,3 +55,11 @@ buildr eclipse
 # download artifact sources
 artifacts:sources
 </pre>
+
+h2. resources
+
+* Groovy Docs - "Dynamic language beans in Spring":http://groovy.codehaus.org/Dynamic+language+beans+in+Spring
+* Spring Docs - "Dynamic language support":http://static.springsource.org/spring/docs/3.0.2.RELEASE/spring-framework-reference/html/dynamic-language.html
+* yokolet's notelets - "RedBridge, what are new and improved in JRuby 1.5.0RC1":http://yokolet.blogspot.com/2010/04/redbridge-what-are-new-and-improved-in.html
+* "Mavenrepository":http://mavenrepository.com/
+* "Findjar":http://findjar.com/
