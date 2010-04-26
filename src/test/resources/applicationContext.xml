@@ -9,7 +9,7 @@ http://www.springframework.org/schema/lang http://www.springframework.org/schema
 ">
 
 <!-- http://static.springsource.org/spring/docs/3.0.2.RELEASE/spring-framework-reference/html/dynamic-language.html -->
-<lang:jruby id="generator" script-interfaces="de.nofail.UUIDGenerator" script-source="classpath:/ruby/uuid_generator.rb">
+<lang:jruby id="identifier" script-interfaces="de.nofail.Identifier" script-source="classpath:/ruby/identifier.rb">
 	<!-- http://static.springsource.org/spring/docs/3.0.2.RELEASE/spring-framework-reference/html/expressions.html -->
     <lang:property name="uuid" value="#{ T(java.util.UUID).randomUUID().toString() }" />
 </lang:jruby>

@@ -5,6 +5,6 @@ package de.nofail;
  * 
  * @author nofail
  */
-public interface UUIDGenerator {
+public interface Identifier {
 	String getUuid();
 }

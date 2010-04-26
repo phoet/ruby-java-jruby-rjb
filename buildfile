@@ -1,6 +1,7 @@
 repositories.remote << "http://www.ibiblio.org/maven2/"
 
-JRUBY = "org.jruby:jruby-complete:jar:1.5.0.RC1"
+#JRUBY = "org.jruby:jruby-complete:jar:1.5.0.RC1"
+JRUBY = "org.jruby:jruby-complete:jar:1.4.0"
 SPRING = group(
             "spring-core", 
             "spring-beans", 
